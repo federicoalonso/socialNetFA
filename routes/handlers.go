@@ -7,11 +7,16 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/rs/cors"
+
+	"github.com/federicoalonso/socialnetfa/app/controllers"
+	"github.com/federicoalonso/socialnetfa/app/middlewares"
 )
 
 // Routes controla las rutas
 func Routes() {
 	router := mux.NewRouter()
+
+	router.HandlerFunc("/registro", middlewares.ChequeoBD(controllers.Registro)).Methods("POST")
 
 	PORT := os.Getenv("PORT")
 	if PORT == "" {
