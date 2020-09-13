@@ -15,8 +15,7 @@ import (
 // Routes controla las rutas
 func Routes() {
 	router := mux.NewRouter()
-
-	router.HandlerFunc("/registro", middlewares.ChequeoBD(controllers.Registro)).Methods("POST")
+	router.HandleFunc("/registro", middlewares.ChequeoBD(controllers.Registro)).Methods("POST")
 
 	PORT := os.Getenv("PORT")
 	if PORT == "" {
