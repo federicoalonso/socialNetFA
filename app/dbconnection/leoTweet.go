@@ -26,9 +26,9 @@ func LeoTweet(ID string, pagina int64) ([]*models.DevuelvoTweet, bool) {
 	}
 
 	opciones := options.Find()
+	opciones.SetSkip((pagina - 1) * 20)
 	opciones.SetLimit(20)
 	opciones.SetSort(bson.D{{Key: "fecha", Value: -1}})
-	opciones.SetSkip((pagina - 1) * 20)
 
 	cursor, err := col.Find(ctx, condicion, opciones)
 	if err != nil {
