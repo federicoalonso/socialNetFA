@@ -21,6 +21,7 @@ func Routes() {
 	router.HandleFunc("/perfil", middlewares.ChequeoBD(middlewares.ValidoJWT(controllers.VerPerfil))).Methods("GET")
 	router.HandleFunc("/modificarPerfil", middlewares.ChequeoBD(middlewares.ValidoJWT(controllers.ModificoRegistro))).Methods("PUT")
 	router.HandleFunc("/tweet", middlewares.ChequeoBD(middlewares.ValidoJWT(controllers.GraboTweet))).Methods("POST")
+	router.HandleFunc("/leoTweets", middlewares.ChequeoBD(middlewares.ValidoJWT(controllers.LeoTweet))).Methods("GET")
 
 	PORT := os.Getenv("PORT")
 	if PORT == "" {
