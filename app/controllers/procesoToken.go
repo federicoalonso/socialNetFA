@@ -20,14 +20,15 @@ func ProcesoToken(tk string) (*models.Claim, bool, string, error) {
 	miClave := []byte("AcaHgoUnaClavePropiaPAraQeuNoLaDecifren")
 	claims := &models.Claim{}
 
-	splitToken := strings.Split(tk, "Bearer")
+	/*splitToken := strings.Split(tk, "Bearer")
 
 	if len(splitToken) != 2 {
 		// los mensajes de error en minuscula sin caracteres raros
 		return claims, false, string(""), errors.New("formato de token invalido")
-	}
+	}*/
 
-	tk = strings.TrimSpace(splitToken[1])
+	//tk = strings.TrimSpace(splitToken[1])
+	tk = strings.TrimSpace(tk)
 
 	tkn, err := jwt.ParseWithClaims(tk, claims, func(token *jwt.Token) (interface{}, error) {
 		return miClave, nil
