@@ -12,7 +12,8 @@ import LogoBlue from "../../assets/png/logo.png";
 
 import "./SignInSignUp.scss";
 
-export default function SignInSignUp() {
+export default function SignInSignUp(props) {
+    const {setRefreshChckLogin} = props;
     const [showModal, setShowModal] = useState(false);
     const [contentModal, setContentModal] = useState(null);
 
@@ -29,6 +30,7 @@ export default function SignInSignUp() {
                     <RightComponent
                         openModal={openModal}
                         setShowModal={setShowModal}
+                        setRefreshChckLogin = {setRefreshChckLogin}
                     />
                 </Row>
             </Container>
@@ -65,7 +67,7 @@ function LeftComponent() {
 }
 
 function RightComponent(props) {
-    const { openModal, setShowModal } = props;
+    const { openModal, setShowModal, setRefreshChckLogin } = props;
 
     return (
         <Col className="signin-signup__right" xs={6}>
@@ -81,7 +83,7 @@ function RightComponent(props) {
                 </Button>
                 <Button
                     variant="outline-primary"
-                    onClick={() => openModal(<SignInForm setShowModal={setShowModal} />)}
+                    onClick={() => openModal(<SignInForm setShowModal={setShowModal} setRefreshChckLogin={setRefreshChckLogin} />)}
                 >
                     Inicia Seción
                 </Button>

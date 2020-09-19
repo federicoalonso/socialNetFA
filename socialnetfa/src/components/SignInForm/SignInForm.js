@@ -8,7 +8,7 @@ import { signInApi, setTokenApi } from '../../api/auth';
 import "./SignInForm.scss";
 
 export default function SignInForm(props) {
-    const { setShowModal } = props;
+    const { setShowModal, setRefreshChckLogin } = props;
     const [formData, setFormData] = useState(initilFormValue());
     const [signInLoading, setSignInLoading] = useState(false);
 
@@ -35,6 +35,7 @@ export default function SignInForm(props) {
                         setTokenApi(response.token);
                         setShowModal(false);
                         setFormData(initilFormValue());
+                        setRefreshChckLogin(true);
                     }
                 }).catch(() => {
                     toast.error("Error del servidor, vuelva a intentarlo luego.")
