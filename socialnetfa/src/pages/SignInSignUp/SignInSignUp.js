@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faUsers, faComment } from "@fortawesome/free-solid-svg-icons";
 
 import BasicModal from "../../components/Modal/BasicModal";
+import SignUpForm from "../../components/SingUpForm";
+import SignInForm from "../../components/SignInForm";
 
 import LogoWhite from "../../assets/png/logo-white.png";
 import LogoBlue from "../../assets/png/logo.png";
@@ -24,13 +26,13 @@ export default function SignInSignUp() {
             <Container className="signin-signout" fluid>
                 <Row>
                     <LeftComponent />
-                    <RightComponent 
+                    <RightComponent
                         openModal={openModal}
                         setShowModal={setShowModal}
                     />
                 </Row>
             </Container>
-            <BasicModal 
+            <BasicModal
                 show={showModal}
                 setShow={setShowModal}
             >
@@ -63,7 +65,7 @@ function LeftComponent() {
 }
 
 function RightComponent(props) {
-    const {openModal, setShowModal} = props;
+    const { openModal, setShowModal } = props;
 
     return (
         <Col className="signin-signup__right" xs={6}>
@@ -71,15 +73,15 @@ function RightComponent(props) {
                 <img src={LogoWhite} alt="tweeter"></img>
                 <h2>Mira lo que está pasando en el mundo en este momento</h2>
                 <h3>Únete a twittor hoy mismo!!</h3>
-                <Button 
-                variant="primary"
-                onClick={()=>openModal(<h2>Formulario de Registro</h2>)}
+                <Button
+                    variant="primary"
+                    onClick={() => openModal(<SignUpForm setShowModal={setShowModal} />)}
                 >
                     Regístrate
                 </Button>
-                <Button 
-                variant="outline-primary"
-                onClick={()=>openModal(<h2>Formulario de Ingreso</h2>)}
+                <Button
+                    variant="outline-primary"
+                    onClick={() => openModal(<SignInForm setShowModal={setShowModal} />)}
                 >
                     Inicia Seción
                 </Button>
