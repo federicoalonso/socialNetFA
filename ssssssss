@@ -1,0 +1,146 @@
+[33mcommit 8ef5efac625c9c6f01284adbccafd8e9eda811ce[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Sat Sep 19 22:29:39 2020 -0300
+
+    Se llega al perfil de usuario
+
+[33mcommit 703582a5f43dfae12ea71b8a1db7f87f44086b28[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Sat Sep 19 18:37:57 2020 -0300
+
+    Feature: Login y Registro listo
+
+[33mcommit ebdd3455961e79a8028d35ffbbdd9c04b58a5d73[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Sat Sep 19 13:33:21 2020 -0300
+
+    Feature: Registro completo
+
+[33mcommit 016d68b757d90a4b6b0dfb24e64f116efc34abcd[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Fri Sep 18 22:05:21 2020 -0300
+
+    Feature: Generando login y registro
+    
+    Se empieza a generar la página de login y registro, queda pendiente la funcionalidad de la misma
+
+[33mcommit edf3147b5ae8a51c6b3e7008762feb3dbe43bc9f[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Wed Sep 16 18:25:55 2020 -0300
+
+    Se crea Front
+    
+    se agrega el front de react para la app
+
+[33mcommit 8cc2d83aecf8526647ef1170632ab0a098f0d3df[m[33m ([m[1;31mheroku/master[m[33m)[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Mon Sep 14 21:16:33 2020 -0300
+
+    ultimo commit, solucionado todo
+
+[33mcommit 876aa879d28c7f358cd8082d5cdec45d8dcba378[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Mon Sep 14 20:09:33 2020 -0300
+
+    ultimo commit, parece raro como me trae las cosas de las relaciones
+
+[33mcommit 3f4de4b51c7686360f3a459f9194c4d6bc21cc41[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Mon Sep 14 17:00:19 2020 -0300
+
+    mejoro ignore files
+
+[33mcommit 91e2421f5760694fd6493b0f7833e239503fa463[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Mon Sep 14 16:55:06 2020 -0300
+
+    listo control de imagen
+
+[33mcommit ddb5fa2e5c742fd6641d7f7d84e9fac4fcb0205c[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Mon Sep 14 15:13:47 2020 -0300
+
+    leida de tweets
+    
+    leer tweets
+
+[33mcommit d8cb8098d4f5ca8bc872bfd69c1eea534833ef8b[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Sun Sep 13 23:43:51 2020 -0300
+
+    grabo tweets
+    
+    llegue a grabar tweets sin errores aparentes
+
+[33mcommit b558bbc6260554a861dd0c722fdb8a4b349508d4[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Sun Sep 13 23:09:48 2020 -0300
+
+    listo modificar registro
+    
+    falta corroborar que solo uno pueda modificar su propio perfil pero es un ejercicio, asi q ta
+
+[33mcommit 4f74e2e962d1154a5436bf53580cef88e1e05933[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Sun Sep 13 22:30:18 2020 -0300
+
+    listo backend verperfil
+    
+    solucionados los problemas con ver perfil, me cago en el bearer y arregle lo otro para que coloque ids nuevos
+
+[33mcommit 7cca8378b104c164298920dc5e29b4ce8c818184[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Sun Sep 13 21:54:57 2020 -0300
+
+    errores todavia
+    
+    errores en el id, no me lo hace hexadecimal, y aparte el token no tiene beare primero, y no le calienta el token para traer los datos
+
+[33mcommit 315bb612b4138d05d5559b0b3c35facab24b9bf8[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Sun Sep 13 19:34:46 2020 -0300
+
+    solucionado error
+    
+    solucionado error
+
+[33mcommit e3f46476e7beb6fbb79119dec365bf3a14b6ff5e[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Sun Sep 13 19:21:26 2020 -0300
+
+    implementado registro de usuarios
+    
+    se implementa el primer registro de usuarios
+
+[33mcommit f5f6c536e1bb52ee2d646df6be09406ea5a036e3[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Sun Sep 13 17:30:11 2020 -0300
+
+    conexion a la Base de Datos
+    
+    Se conecta a la Base de datos,
+    Se agrega gitignore en la raiz
+
+[33mcommit 23f641b14aa73b9394e7fc9f5613344c16c51822[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Sun Sep 13 16:39:46 2020 -0300
+
+    instaladas dependencias
+    
+    instaladas dependencias
+
+[33mcommit 3adde799191127c2dc069c9569403143e272ef99[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Sun Sep 13 16:27:23 2020 -0300
+
+    configuracion inicial
+    
+    conf inicial
+
+[33mcommit bad30766644201312b16ee79e0160c5b43ea1204[m
+Author: federicoalonso <46576525+federicoalonso@users.noreply.github.com>
+Date:   Sun Sep 13 16:15:50 2020 -0300
+
+    creado README
+    
+    se crea README

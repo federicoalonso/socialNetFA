@@ -1,15 +1,14 @@
 import { API_HOST } from '../utils/constants';
-import { getTokenApi } from './auth';
+import {getTokenApi} from "./auth";
 
-export function getUserApi(id) {
-    const url = `${API_HOST}/perfil?id=${id}`;
+export function checkFollowApi(idUser){
+    const url = `${API_HOST}/consultaAmistad?id=${idUser}`;
 
     const params = {
         headers: {
-            "Content-Type": "application/json",
             Authorization: `${getTokenApi()}`
         }
-    }
+    };
 
     return fetch(url, params)
         .then(response => {
@@ -24,19 +23,15 @@ export function getUserApi(id) {
         });
 }
 
-export function uploadBannerApi(file){
-    const url = `${API_HOST}/subirBanner`;
-
-    const formData = new FormData();
-    formData.append("banner", file);
+export function followUserApi(idUser){
+    const url = `${API_HOST}/amistad?id=${idUser}`;
 
     const params = {
-        method: "POST",
+        method:"POST",
         headers: {
             Authorization: `${getTokenApi()}`
-        },
-        body: formData
-    }
+        }
+    };
 
     return fetch(url, params)
         .then(response => {
@@ -51,43 +46,15 @@ export function uploadBannerApi(file){
         });
 }
 
-export function uploadAvatarApi(file){
-    const url = `${API_HOST}/subirAvatar`;
-
-    const formData = new FormData();
-    formData.append("avatar", file);
+export function unFollowUserApi(idUser){
+    const url = `${API_HOST}/bajaAmistad?id=${idUser}`;
 
     const params = {
-        method: "POST",
+        method:"DELETE",
         headers: {
             Authorization: `${getTokenApi()}`
-        },
-        body: formData
-    }
-
-    return fetch(url, params)
-        .then(response => {
-            if (response.status >= 400) throw null;
-            return response.json();
-        })
-        .then(result => {
-            return result;
-        })
-        .catch(err => {
-            return err;
-        });
-}
-
-export function updateInfoApi(user){
-    const url = `${API_HOST}/modificarPerfil`;
-
-    const params = {
-        method: "PUT",
-        headers: {
-            Authorization: `${getTokenApi()}`
-        },
-        body: JSON.stringify(user)
-    }
+        }
+    };
 
     return fetch(url, params)
         .then(response => {
